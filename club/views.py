@@ -8,3 +8,7 @@ def index(request):
 def users(request):
     user_list=User.objects.all()
     return render(request, 'club/users.html', {'user_list':user_list})
+
+def resources(request):
+    resource_list=Resource.objects.all()
+    return render(request, 'club/resources.html', {'resource_list':resource_list})
